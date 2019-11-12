@@ -11,7 +11,7 @@ To check out MediLink locally, just follow these steps:
 
 3) run 'python3 deindoc.py'
 
-4) Install any dependencies that might be missing (all dependencies can be founbd n DeinDoc.py)
+4) Install any dependencies that might be missing (all dependencies can be found in DeinDoc.py)
 
 5) Navigate to localhost:5000, and enjoy!
 
