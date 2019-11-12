@@ -12,7 +12,7 @@ currDisease = ['Asthma']
 diseaseList = ['Asthma', 'Shingles', 'flu', 'Stomach Virus', 'Strep Throat']
 
 url = "https://api-reg-apigee.ncrsilverlab.com/v2/orders"
-token = "Bearer gAAAALOWxUkb73khqM2HJ9SJYjA3FQYHIaIRHfOdAeyg8u0q4M59-a2_scU1RYjlW96pW0U5fSPolx6bS9EICoM_2MUnJXqrQHgnyFcQfU1mzMjKTK3IJhSS_KYJ5u2_Nbn-H9n2nVpNzcVwEGF4eYdm-QR70_MNK1io1GKRUIxKlsIs9AAAAIAAAACdJDjvFGghIDFProy7AXjOXeJ0rolVhv2HUxnmhCpnkxQI_HDeFQdFDdubWQodjiW5ZDhPgyQw8paFx_6eS1vuEvAcyY7yvLJzsemZfIVgCUZ18yWTT1NMTIaxRBLO60DLidMB1Ria-JauVT-pn0GqkpYzabD5TZ1kjGN5Eacmj1Btem30rF4eTnsCjMuMgIYSpZ3kUJpfv28LlK1lgPERrWQaggRwBmL34MJJ7GvbPID4ui1v66S54vFa41oa4szJyb1wND2UJftzz9D0VB5-2rzc9STALRxlfenpvCDPrjPUxgBJNSdvgzAXPouj92o"
+token = "Bearer gAAAAJt_ACGPI2BPB_NihIjIzM08X50_CpVMAj1XXsdAzRBDH1h6bDdHypqCjVIePfif2UcYIA3PlhK_gPYDcbOkFGJ_ie9Gzpt0aV2-uiBo-8tfuc7dB7LkWc28tJv-yPvktSezfJkY8TyOf7RB0ng88rE-EMpy0atrDycC9cheNgoQ9AAAAIAAAACaTmS2HpwW6LSjQ1UbjEWZhHFPS7yen5b2J1izo1-3W0Tb7ZTt1-Xur2tHFgmE9Uv0Gw7JrazNOzmzjDy9fJwHsRY7VGKTwKzl4Uxxz7hwoYAJCEFyfRAVCA9GXuEunOHN2vBbxO42BXp1u4cIbpLSiE_B27r9YXEIcQ39Z3hZNpFhHsPNJ0DfjbtOw6_V3U2rZB6ZI5YN-yr6PmEsGiBfN5g5IgjHiP7yc2LLj7YqQFtN02s1j4NU9Ma1tgYwkBGMuuylgrL4tTpx0wZP8qs0CZA69k5RDgAC5jGxkf--9ZgeyIaPq5A2ft8geN09y8g"
 querystring = {"store_number":"1"}
 headers = {
     'Accept': "application/json",
@@ -64,7 +64,7 @@ def shop():
 def diseasePlaceholder():
     disease = request.args.get('disease')
     currDisease.append(disease)
-    return doc()
+    return shop()
 
 @app.route("/addToCart")
 def addToCart():
